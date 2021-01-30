@@ -19,41 +19,70 @@
         <![endif]-->
 
         <article class="shopping-cart">
-           <header>
+           <header class="shopping-cart__header">
             <i class="fa fa-shopping-cart"></i>
-            <span>My shopping cart</span>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg> -->
+            <span  class="shopping-cart__header-txt">My shopping cart</span>
            </header>
 
-           <section>
-                <ul>
-                    <li>Products</li>
-                    <li>Quality</li>
-                    <li>Price</li>
-                    <li>Subtotal</li>
+           <section class="product-section">
+                <ul class="product-details">
+                    <li class="product-detail">Products</li>
+                    <li class="product-detail">Quality</li>
+                    <li class="product-detail">Price</li>
+                    <li class="product-detail">Subtotal</li>
                 </ul>
 
-                <ul>
-                    <li>
-                        <div>1984</div>
-                        <div>By George Orwell</div>
-                    </li>
-                    <li>1</li>
-                    <li>$7.48</li>
-                    <li>$7.48</li>
-                </ul>
+                <div class="product-container">
+                    <!--Item in the cart-->
+                    <ul class="product">
+                        <li class="product__name">
+                            <div class="product__name__title">1984</div>
+                            <div class="product__name__author">By George Orwell</div>
+                        </li>
+                        <li class="product__quantity">1</li>
+                        <li class="product__price">$7.48</li>
+                        <li class="product__subtotal">$7.48</li>
+                        <li class="product__remove">&times;</li>
+                    </ul>
+                    <!--Item in the cart-->
+                    <ul class="product">
+                        <li class="product__name">
+                            <div class="product__name__title">book 2</div>
+                            <div class="product__name__author">By author 2</div>
+                        </li>
+                        <li class="product__quantity">1</li>
+                        <li class="product__price">$17.48</li>
+                        <li class="product__subtotal">$17.48</li>
+                        <li class="product__remove">&times;</li>
+                    </ul>
+                    <!--Item in the cart-->
+                    <ul class="product">
+                        <li class="product__name">
+                            <div class="product__name__title">book 3</div>
+                            <div class="product__name__author">By author 3</div>
+                        </li>
+                        <li class="product__quantity">1</li>
+                        <li class="product__price">$117.48</li>
+                        <li class="product__subtotal">$117.48</li>
+                        <li class="product__remove">&times;</li>
+                    </ul>
+                </div>
 
                 <div>
-                    <div>Total</div>
-                    <div>$44.24</div>
+                    <div class="product-section__total-txt">Total</div>
+                    <div class="product-section__total-amt">$44.24</div>
                 </div>
            </section>
 
-           <footer>
+           <footer class="shopping-cart__footer">
                <button class="btn-style-1">back to shopping</button>
                <button class="btn-style-1">recalculate</button>
                <button class="btn-style-1">proceed</button>
            </footer>
         </article>
-
+        <!--End of  .shopping-cart-->
     </body>
 </html>

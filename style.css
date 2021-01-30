@@ -3,7 +3,7 @@
 :root {
     /*color scheme*/
     --purple:#C0ABE6;
-    --color:#3B4574;
+    --dark-blue:#3B4574;
     --color:#676294;
     --color:#7172A6;
     --color:#7C7B7C;
@@ -24,4 +24,57 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background:var(--purple);
+}
+
+
+li {
+    list-style:none;
+}
+
+.shopping-cart {
+    background-color:#fff;
+    background-color:var(--white);
+    border-radius: 10px;
+    width:50rem;
+
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.shopping-cart__header {
+    background-color:var(--dark-blue);
+    color:var(--white);
+    border-radius:5px 5px 0px 0px;
+}
+
+.product-details {
+    display:flex;
+    justify-content: space-between;
+    /* margin:0 10rem; */
+}
+
+.product-detail:first-of-type {
+    margin:0;
+}
+
+.product-detail {
+}
+
+.product {
+    display:flex;
+}
+
+.product__name {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shopping-cart__footer {
+    background-color:var(--dark-blue);
+    color:var(--white);
+    border-radius:0px 0px 5px 5px;
 }
