@@ -50,28 +50,23 @@ li {
     border-radius:5px 5px 0px 0px;
 }
 
+
 .product-details {
     display:flex;
     justify-content: space-between;
-    /* margin:0 10rem; */
+    width:95%;
+    margin:0 auto;
+    background-color:#eee;
 }
 
 .product-detail:first-of-type {
-    margin:0;
+    background:red;
+    margin-right:20rem;
 }
 
-.product-detail {
-}
 
-.product {
-    display:flex;
-}
 
-.product__name {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 
 .shopping-cart__footer {
     background-color:var(--dark-blue);
