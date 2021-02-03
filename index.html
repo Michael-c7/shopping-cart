@@ -20,7 +20,7 @@
 
         <article class="shopping-cart">
            <header class="shopping-cart__header">
-            <i class="fa fa-shopping-cart"></i>
+            <i class="fa fa-shopping-cart icon-header"></i>
             <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg> -->
@@ -28,74 +28,76 @@
            </header>
 
            <section class="product-section">
-                <!-- <table class="product-table">
-                    <tr class="product-details">
-                        <th class="product-detail">Products</th>
-                        <th class="product-detail">Quality</th>
-                        <th class="product-detail">Price</th>
-                        <th class="product-detail">Subtotal</th>
-                    </tr>
-
-
-                    <tr class="product">
-                        <td class="product__name product-item"> 
-                            <div class="product__name__title">book title</div>
-                            <div class="product__name__author">book author</div>
-                        </td>
-                        <td class="product__quantity product-item">1</td>
-                        <td class="product__price product-item">$17.48</td>
-                        <td class="product__subtotal product-item">$17.48</td>
-                        <td class="product__remove product-item">&times;</td>
-                    </tr>
-
-                    <tr class="product">
-                        <td class="product__name product-item"> 
-                            <div class="product__name__title">book title 2</div>
-                            <div class="product__name__author">book author 2</div>
-                        </td>
-                        <td class="product__quantity product-item">1</td>
-                        <td class="product__price product-item">$17.48</td>
-                        <td class="product__subtotal product-item">$17.48</td>
-                        <td class="product__remove product-item">&times;</td>
-                    </tr>
-
-                    <tr class="product">
-                        <td class="product__name product-item"> 
-                            <div class="product__name__title">book title 3</div>
-                            <div class="product__name__author">book author 3</div>
-                        </td>
-                        <td class="product__quantity product-item">1</td>
-                        <td class="product__price product-item">$17.48</td>
-                        <td class="product__subtotal product-item">$17.48</td>
-                        <td class="product__remove product-item">&times;</td>
-                    </tr>
-                </table>-->
-
-                <ul class="product-details">
-                    <li class="product-detail">Products</li>
-                    <li class="product-detail">Quality</li>
-                    <li class="product-detail">Price</li>
-                    <li class="product-detail">Subtotal</li>
+                <ul class="product-details-title">
+                    <li class="product-detail-title">Product</li>
+                    <li class="product-detail-title">Quality</li>
+                    <li class="product-detail-title">Price</li>
+                    <li class="product-detail-title">Subtotal</li>
                 </ul>
 
                 <ul class="product-details">
-                    <li class="product-detail">book title 2</li>
-                    <li class="product-detail">1</li>
-                    <li class="product-detail">$17.48</li>
-                    <li class="product-detail">$17.48</li>
-                    <!-- <li class="product-detail">&times;</li> -->
+                    <li class="product-detail">
+                        <div class="test">
+                            <div class="product-detail__name">Know Your Onions: Web Design</div>
+                            <div class="product-detail__author">by Drew de Soto</div>
+                        </div>
+                    </li>
+                    <li class="product-detail product-detail-amt">1</li>
+                    <li class="product-detail product-detail-price">$17.48</li>
+                    <li class="product-detail product-detail-subtotal">$17.48</li>
+                    <li class="product-detail product-detail-delete"><button class="product-detail-delete-btn">&times;</button></li>
                 </ul>
 
-                <div class="product-section__total">
-                    <span class="product-section__total-txt">Total</span>
-                    <span class="product-section__total-amt">$44.24</span>
+
+                <ul class="product-details">
+                    <li class="product-detail">
+                        <div class="test">
+                            <div class="product-detail__name">Thinking with Type</div>
+                            <div class="product-detail__author">by Ellen Lupton</div>
+                        </div>
+                    </li>
+                    <li class="product-detail product-detail-amt">1</li>
+                    <li class="product-detail product-detail-price">$14.88</li>
+                    <li class="product-detail product-detail-subtotal">$14.88</li>
+                    <li class="product-detail product-detail-delete"><button class="product-detail-delete-btn">&times;</button></li>
+                </ul>
+
+
+                <ul class="product-details">
+                    <li class="product-detail">
+                        <div class="test">
+                            <div class="product-detail__name">Universal Principles of Design</div>
+                            <div class="product-detail__author">by William Lidwell and Kritina Holden</div>
+                        </div>
+                    </li>
+                    <li class="product-detail product-detail-amt">1</li>
+                    <li class="product-detail product-detail-price">$15.90</li>
+                    <li class="product-detail product-detail-subtotal">$15.90</li>
+                    <li class="product-detail product-detail-delete"><button class="product-detail-delete-btn">&times;</button></li>
+                </ul>
+
+                <div class="product-section__total-container">
+                    <div class="product-section__total">
+                        <span class="product-section__total-txt">Total</span>
+                        <span class="product-section__total-amt">$44.24</span>
+                    </div>
                 </div>
            </section>
 
+
+
+           
+
+
+
            <footer class="shopping-cart__footer">
-               <button class="btn-style-1">back to shopping</button>
-               <button class="btn-style-1">recalculate</button>
-               <button class="btn-style-1">proceed</button>
+               <div class="shopping-cart__footer__inner">
+                    <div>
+                        <button class="btn-style-1">back to shopping</button>
+                        <button class="btn-style-1">recalculate</button>
+                    </div>
+                <button class="proceed-btn">proceed</button>
+               </div>
            </footer>
         </article>
         <!--End of  .shopping-cart-->
