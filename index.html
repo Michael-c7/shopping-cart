@@ -27,63 +27,68 @@
             <span  class="shopping-cart__header-txt">My shopping cart</span>
            </header>
 
-           <section class="product-section">
-                <ul class="product-details-title">
-                    <li class="product-detail-title">Product</li>
-                    <li class="product-detail-title">Quality</li>
-                    <li class="product-detail-title">Price</li>
-                    <li class="product-detail-title">Subtotal</li>
-                </ul>
-
-                <ul class="product-details">
-                    <li class="product-detail">
-                        <div class="test">
-                            <div class="product-detail__name">Know Your Onions: Web Design</div>
-                            <div class="product-detail__author">by Drew de Soto</div>
-                        </div>
-                    </li>
-                    <li class="product-detail product-detail-amt">1</li>
-                    <li class="product-detail product-detail-price">$17.48</li>
-                    <li class="product-detail product-detail-subtotal">$17.48</li>
-                    <li class="product-detail product-detail-delete"><button class="product-detail-delete-btn">&times;</button></li>
-                </ul>
-
-
-                <ul class="product-details">
-                    <li class="product-detail">
-                        <div class="test">
-                            <div class="product-detail__name">Thinking with Type</div>
-                            <div class="product-detail__author">by Ellen Lupton</div>
-                        </div>
-                    </li>
-                    <li class="product-detail product-detail-amt">1</li>
-                    <li class="product-detail product-detail-price">$14.88</li>
-                    <li class="product-detail product-detail-subtotal">$14.88</li>
-                    <li class="product-detail product-detail-delete"><button class="product-detail-delete-btn">&times;</button></li>
-                </ul>
-
-
-                <ul class="product-details">
-                    <li class="product-detail">
-                        <div class="test">
-                            <div class="product-detail__name">Universal Principles of Design</div>
-                            <div class="product-detail__author">by William Lidwell and Kritina Holden</div>
-                        </div>
-                    </li>
-                    <li class="product-detail product-detail-amt">1</li>
-                    <li class="product-detail product-detail-price">$15.90</li>
-                    <li class="product-detail product-detail-subtotal">$15.90</li>
-                    <li class="product-detail product-detail-delete"><button class="product-detail-delete-btn">&times;</button></li>
-                </ul>
-
-                <div class="product-section__total-container">
-                    <div class="product-section__total">
-                        <span class="product-section__total-txt">Total</span>
-                        <span class="product-section__total-amt">$44.24</span>
-                    </div>
+           <section class="product-section cart">
+                
+            <ul class="cart__product-tiles">
+                <li class="cart__product-title title">Product</li>
+                <li class="cart__product-title">Quality</li>
+                <li class="cart__product-title">Price</li>
+                <li class="cart__product-title">Subtotal</li>
+              </ul>
+              
+              <ul class="cart__product-items">
+                <li class="product-item name">
+                  <div class="product-item__intro"> 
+                    <div class="product-item__name">Know Your Onions: Web Design</div>
+                    <div class="product-item__author">by Drew de Soto</div>
+                  </div>
+                 </li>
+                <li class="product-item product-item--amt">1</li>
+                <li class="product-item">$17.48</li>
+                <li class="product-item">$17.48</li>
+                <li class="product-item  product-item--delete">
+                  <button class="delete-btn">&times;</button>
+                </li>
+              </ul>
+              
+              
+              <ul class="cart__product-items">
+                <li class="product-item name">
+                  <div class="product-item__intro "> 
+                    <div class="product-item__name">Thinking with Type</div>
+                    <div class="product-item__author">by Ellen Lupton</div>
+                  </div>
+                 </li>
+                <li class="product-item product-item--amt">3</li>
+                <li class="product-item">$14.98</li>
+                <li class="product-item">$14.98</li>
+                <li class="product-item  product-item--delete">
+                  <button class="delete-btn">&times;</button>
+                </li>
+              </ul>
+            
+            
+              <ul class="cart__product-items">
+                <li class="product-item name">
+                  <div class="product-item__intro"> 
+                    <div class="product-item__name">Universal Principles of Design</div>
+                    <div class="product-item__author">by William Lidwell and Kritina Holden</div>
+                  </div>
+                 </li>
+                <li class="product-item product-item--amt">122</li>
+                <li class="product-item">$155.64</li>
+                <li class="product-item">$155.64</li>
+                <li class="product-item product-item--delete">
+                  <button class="delete-btn">&times;</button>
+                </li>
+              </ul>
+              
+              <div class="total-cost-container">
+                <div class="total-cost">
+                  <span class="total-cost__total-txt">TOTAL</span>
+                  <span class="total-cost__cost-amt">$118.10</span>
                 </div>
-           </section>
-
+              </div>
 
 
            
