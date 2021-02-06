@@ -15,8 +15,8 @@
     --red-100:#ff4757;
 
     --gray:#7C7B7C;
-    --gray-050:#727272;
-    --gray-100:#a8a7a7;
+    --gray-050:#6b6a6a;
+    --gray-100:#818181;
 
     --line-gradient-1:linear-gradient(83deg, rgba(192,171,230,1) 13%, rgba(106,215,255,1) 94%);
 }
@@ -73,20 +73,21 @@ li {
     color:var(--white);
     border-radius:5px 5px 0px 0px;
     text-transform: uppercase;
-    font-size:1.25rem;
-    padding:0.5rem 0;
+    font-size:1rem;
+    font-weight:600;
+    padding:1.25rem 0;
 }
 
 .icon-header {
     margin-left:0.5rem;
     margin-right:0.5rem;
+    font-size:1.5em;
 }
 
 
 
 
 /*cart*/
-
 .cart {
     padding:1rem;
 }
@@ -102,9 +103,7 @@ li {
     color:var(--blue);
     margin-bottom:1rem;
   }
-  
-  
-  
+    
   
   .cart__product-items {
     position:relative;
@@ -122,7 +121,6 @@ li {
     background: rgb(192,171,230);
     background: linear-gradient(83deg, rgba(192,171,230,1) 13%, rgba(106,215,255,1) 94%);
     left:0;
-    
   }
   
   
@@ -134,7 +132,7 @@ li {
     justify-self:stretch;
   }
   
-  .prdouct-item--delete {
+  .product-item--delete {
     justify-self:end;
   }
   
@@ -144,124 +142,81 @@ li {
     font-size:0.85rem;
     align-self:center;
   }
+
+  .product-item__name {
+        color:var(--gray-050);
+        font-weight: 600;
+        letter-spacing: 0.75px;
+    }
+
+    .product-item__author {
+        color:var(--gray-100);
+    }
   
+    /*quantity*/
   .product-item--amt {
     position:relative;
     background-color:#fff;
-    box-shadow:0 0 15px rgba(50,50,50,0.3);
+    box-shadow:0 0 15px rgba(50,50,50,0.15);
     border-radius:25px;
     width:4rem;
-    height:2.5rem;
+    height:2.25rem;
     color:var(--blue);
     text-align:center;
     align-self:center;
     padding-top:0.75rem;
   }
   
-  
+
+  .delete-btn {
+    border:none;
+    background:none;
+    font-size:1.5rem;
+    color:var(--red-050);
+    cursor: pointer;
+} 
+
+
+
+ /*total btn*/
   .total-cost-container {
-  /*   background:red; */
     display:grid;
     grid-template-columns:3fr 1fr 1fr 1fr 10px;
   }
   
   .total-cost {
-    background:blue;
-    grid-column:4/-1;
-    justify-self:stretch;    
+      position: relative;
+    /* background:blue; */
+    grid-column:3/-1;
+    justify-self:end; 
+    align-self:center; 
+    /*left here to offset
+    the left in
+    .total-cost__cost-amt*/
+    left:10px;
+
+    margin:1rem 0;
   }
 
-
-
-
-/* .product-details-title {
-    margin:1rem 1.5rem 1.5rem 1.5rem;
-    color:var(--blue);
-    font-size:1rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 500;
-} */
-
-
-/* .product-detail-delete {
-    position: absolute;
-    left:103%;
-    transform: translate(-103%);
-} */
-
-
-
-/* .product-detail__name {
-    color:var(--gray-050);
-    margin-bottom:-0.25rem;
-}
-
-.product-detail__author {
-    color:var(--gray-100);
-    font-size:0.9rem;
-} */
-
-/* .product-detail-amt {
-    color:var(--blue);
-    background-color:#fff;
-    width:3rem;
-    height:1.5rem;
-    border-radius:20px;
-    font-weight: 500;
-    
-    text-align: center;
-    box-shadow: 0 0 15px #464c643d;
-} */
-
-/* .product-detail-price,
-.product-detail-subtotal {
-    color:gray;
-    color:var(--gray-050);
-}
-
-.product-detail-delete-btn {
-    border:none;
-    background:none;
-    font-size:1.5rem;
-    color:var(--red-050);
-} */
-
-
-/*total btn*/
-.product-section__total-container {
-    position: relative;    
-    font-size:1.15rem;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items:center;
-    margin-bottom:1.5rem;
-    height:3rem;
-}
-
-
-.product-section__total-txt {
-    color:var(--gray);
+  .total-cost__total-txt {
+    color:#666;
     border:1px solid var(--red-050);
     border-right:none;
-    padding:0.5rem 1rem;
     text-transform: uppercase;
     font-weight: 600;
+    width:50%;
+    height:100%;
+    padding:0.5rem 1rem;
 }
 
-.product-section__total-amt {
+.total-cost__cost-amt {
     font-weight: 600;
     color:var(--white);
     background-color:var(--red-050);
     position: relative;
     left:-10px;
-    padding:calc(0.51rem + 1px) 1rem;
+    padding:calc(0.5rem + 1px) 1rem;
 }
-
-
-
-
 
 
 /*footer*/
@@ -276,7 +231,7 @@ li {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin:0 0.5rem;
+    margin:0 1rem 0 0.5rem;
     padding:1.5rem 0 3rem 0;
 }
 
@@ -297,8 +252,9 @@ li {
     text-transform: uppercase;
     background-color:#fff;
     color:var(--red-050);
-    font-size:1.15rem;
+    font-size:1rem;
     font-weight: 600;
+    letter-spacing: 0.5px;
     padding:0.75rem 2.5rem;
     cursor: pointer;
 }
