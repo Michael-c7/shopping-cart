@@ -51,7 +51,9 @@ li {
     background-color:#fff;
     background-color:var(--white);
     border-radius: 10px;
-    width:50rem;
+    min-width:25rem;
+    width:80vw;
+    max-width:60rem;
 
     position:absolute;
     left:50%;
@@ -59,6 +61,12 @@ li {
     transform: translate(-50%,-50%);
 }
 
+
+
+
+
+
+/*header*/
 .shopping-cart__header {
     background: rgb(59,69,116);
     background: linear-gradient(90deg, rgba(59,69,116,1) 30%, #676294 90%);
@@ -75,43 +83,28 @@ li {
 }
 
 
-.product-details-title {
+
+
+/*cart*/
+/* .product-details-title {
     margin:1rem 1.5rem 1.5rem 1.5rem;
     color:var(--blue);
     font-size:1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 500;
-}
+} */
 
-.product-detail-title:first-of-type {
-    margin-right:15rem;
-   
-}
 
-.product-details {
-    position: relative;
-    margin-left:2rem;
-    margin-right:2rem;
-}
-
-.product-detail:first-of-type {
-    margin-right:3.5rem;
-}
-
-.product-detail-delete {
+/* .product-detail-delete {
     position: absolute;
     left:103%;
     transform: translate(-103%);
-}
+} */
 
-.product-details-title,
-.product-details {
-    display:flex;
-    justify-content: space-between;
-}
 
-.product-detail__name {
+
+/* .product-detail__name {
     color:var(--gray-050);
     margin-bottom:-0.25rem;
 }
@@ -119,9 +112,9 @@ li {
 .product-detail__author {
     color:var(--gray-100);
     font-size:0.9rem;
-}
+} */
 
-.product-detail-amt {
+/* .product-detail-amt {
     color:var(--blue);
     background-color:#fff;
     width:3rem;
@@ -131,9 +124,9 @@ li {
     
     text-align: center;
     box-shadow: 0 0 15px #464c643d;
-}
+} */
 
-.product-detail-price,
+/* .product-detail-price,
 .product-detail-subtotal {
     color:gray;
     color:var(--gray-050);
@@ -144,10 +137,10 @@ li {
     background:none;
     font-size:1.5rem;
     color:var(--red-050);
-}
+} */
 
 
-
+/*total btn*/
 .product-section__total-container {
     position: relative;    
     font-size:1.15rem;
@@ -155,8 +148,6 @@ li {
     display: flex;
     justify-content: flex-end;
     align-items:center;
-
-    /* background:red; */
     margin-bottom:1.5rem;
     height:3rem;
 }
@@ -181,6 +172,11 @@ li {
 }
 
 
+
+
+
+
+/*footer*/
 .shopping-cart__footer {
     background: rgb(59,69,116);
     background: linear-gradient(90deg, rgba(59,69,116,1) 30%, #676294 90%);
@@ -230,7 +226,6 @@ li {
 
 
 /*cart imported from codpen*/
-
 
 .cart__product-tiles {
     display:grid;
